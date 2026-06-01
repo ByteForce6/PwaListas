@@ -124,4 +124,64 @@ a {
   background-size: 15000%;
  }
 
+ 
+}
+
+
+
+.equipo-descripcion {
+ text-align: center;
+ padding: 1.5rem;
+ margin-bottom: 1rem;
+}
+
+.equipo-descripcion h2 {
+ color: var(--md-sys-color-primary);
+ font-size: 2rem;
+ font-weight: 700;
+ margin-bottom: .5rem;
+}
+
+.equipo-descripcion p {
+ color: var(--md-sys-color-on-background);
+ opacity: .9;
+}
+
+.md-list {
+ padding: 1rem;
+}
+
+.md-one-line.avatar {
+ background: var(--md-sys-color-surface-container);
+ border: 1px solid var(--md-sys-color-outline-variant);
+ border-radius: 20px;
+ margin-bottom: 16px;
+ padding: 16px;
+ box-shadow: var(--md-box_shadow_level1);
+ transition: all .25s ease;
+}
+
+.md-one-line.avatar:hover {
+ background: var(--md-sys-color-surface-container-high);
+ box-shadow: var(--md-box_shadow_level3);
+ transform: translateY(-2px);
+}
+
+.md-one-line.avatar img {
+ width: 72px;
+ height: 72px;
+ border-radius: 50%;
+ object-fit: cover;
+ border: 4px solid var(--md-sys-color-primary);
+}
+
+.headline {
+ color: var(--md-sys-color-on-surface);
+ font-weight: 600;
+}
+
+md-app-bar h1 {
+ color: var(--md-sys-color-on-surface);
+ font-weight: 700;
+ letter-spacing: 1px;
 }

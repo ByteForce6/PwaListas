@@ -3,165 +3,224 @@
 
 <head>
 
- <meta charset="UTF-8">
+    <meta charset="UTF-8">
 
- <title>PWA con Lista</title>
+    <title>BYTE FORCE</title>
 
- <!-- Resumen para los motores de búsqueda. -->
- <meta name="description" content="Ejemplo de PWA con Material Design">
+    <meta name="description"
+        content="Byte Force - Equipo de desarrollo de la Universidad Tecnológica de Nezahualcóyotl">
 
- <script type="module" src="js/registraServiceWorker.js"></script>
- <script type="module" src="libclienteweb/manejaErrores.js"></script>
+    <script type="module" src="js/registraServiceWorker.js"></script>
+    <script type="module" src="libclienteweb/manejaErrores.js"></script>
 
- <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width">
 
- <!-- Color de la barra de navegación de Chrome en dispositivos móviles. -->
- <meta name="theme-color" content="#fffbfe">
+    <meta name="theme-color" content="#fffbfe">
 
- <!-- Ícono para la página web, que normalmente se pone en la raíz del sitio.
-  Puede ser diferente para cada página. -->
- <link rel="icon" sizes="32x32" href="favicon.ico">
+    <link rel="icon" sizes="32x32" href="favicon.ico">
 
- <!-- Configuración de la PWA para Chrome, Edge y Safari.
-  Debe ponerse en todas las páginas. -->
- <link rel="manifest" href="site.webmanifest">
- <link rel="stylesheet" href="css/material-symbols-outlined.css">
- <link rel="stylesheet" href="material-tokens/css/baseline.css">
- <link rel="stylesheet" href="css/estilos.css">
+    <link rel="manifest" href="site.webmanifest">
 
- <!-- Permite a los navegadores, que como Safari no soportan el estándar
-  completo de custom elementsm, lo cumplan totalmente. Debe ponerse en todas
-  las páginas. -->
- <script src="ungap/es.js"></script>
+    <link rel="stylesheet" href="css/material-symbols-outlined.css">
+    <link rel="stylesheet" href="material-tokens/css/baseline.css">
+    <link rel="stylesheet" href="css/estilos.css">
 
- <script type="module" src="libmde/md-app-bar.js"></script>
- <script type="module" src="js/nav-tab-fixed.js"></script>
+    <script src="ungap/es.js"></script>
 
- <link rel="stylesheet" href="libmde/md-tab.css">
- <link rel="stylesheet" href="libmde/md-list.css">
- <link rel="stylesheet" href="css/transicion_pestanas.css">
+    <script type="module" src="libmde/md-app-bar.js"></script>
+    <script type="module" src="js/nav-tab-fixed.js"></script>
+
+    <link rel="stylesheet" href="libmde/md-tab.css">
+    <link rel="stylesheet" href="libmde/md-list.css">
+    <link rel="stylesheet" href="css/transicion_pestanas.css">
 
 </head>
 
 <body>
 
- <md-app-bar class="centered" adicional="tab">
+    <md-app-bar class="centered" adicional="tab">
+        <h1>BYTE FORCE</h1>
+    </md-app-bar>
 
-  <h1>PWA con Lista</h1>
+    <nav-tab-fixed id="tab"></nav-tab-fixed>
 
- </md-app-bar>
+    <section>
 
- <nav-tab-fixed id="tab"></nav-tab-fixed>
+        <div class="equipo-descripcion">
+            <h2>BYTE FORCE</h2>
+            <p>
+                Equipo de desarrollo de la Universidad Tecnológica de
+                Nezahualcóyotl especializado en software, diseño de interfaces,
+                bases de datos y soluciones digitales.
+            </p>
+        </div>
 
- <section>
+        <ul class="md-list">
 
-  <ul class="md-list">
+            <!-- INFORMACIÓN GENERAL -->
 
-   <li class="md-one-line">
-    <span class="headline">
-     Ciudad de México
-    </span>
-   </li>
+            <li class="md-one-line icon">
+                <span class="material-symbols-outlined">
+                    groups
+                </span>
+                <span class="headline">
+                    Equipo de Desarrollo BYTE FORCE
+                </span>
+            </li>
 
-   <li class="md-one-line">
-    <span class="headline">
-     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-     Laboriosam eaque unde voluptates tempore ad suscipit libero, saepe neque
-     illo amet, eos ea similique quia, maiores tenetur modi nobis expedita
-     alias!
-    </span>
-   </li>
+            <li class="md-one-line icon">
+                <span class="material-symbols-outlined">
+                    school
+                </span>
+                <span class="headline">
+                    Universidad Tecnológica de Nezahualcóyotl
+                </span>
+            </li>
 
-   <li class="md-one-line icon">
-    <span class="material-symbols-outlined">account_balance</span>
-    <span class="headline">
-     Atenas
-    </span>
-   </li>
+            <!-- BRIAN -->
 
-   <li class="md-one-line avatar">
-    <img alt="Avatar de Ana" src="img/pexels-moises-patrício-10961948.jpg">
-    <span class="headline">
-     Ana
-    </span>
-   </li>
+            <li class="md-one-line avatar">
+                <img alt="Brian Yahir Escalante González"
+                    src="img/Brian.jpeg">
+                <span class="headline">
+                    Brian Yahir Escalante González
+                </span>
+            </li>
 
-   <li class="md-one-line image">
-    <img alt="Coyote de Neza" src="img/Escultura_de_coyote.jpeg">
-    <span class="headline">
-     Neza
-    </span>
-   </li>
+            <li class="md-one-line icon">
+                <span class="material-symbols-outlined">
+                    code
+                </span>
+                <span class="headline">
+                    Líder del equipo y desarrollador Backend.
+                </span>
+            </li>
 
-   <li class="md-one-line video">
-    <img alt="Ciudad de San Francisco"
-     src="img/pexels-craig-dennis-3701822.jpg">
-    <span class="headline">
-     San Francisco
-    </span>
-   </li>
+            <!-- ANGEL -->
 
-   <li class="md-one-line video">
-    <img alt="Ciudad de San Francisco"
-     src="img/pexels-craig-dennis-3701822.jpg">
-    <span class="headline">
-     Lorem ipsum dolor sit amet consectetur adipisicing elit.
-     Laboriosam eaque unde voluptates tempore ad suscipit libero, saepe neque
-     illo amet, eos ea similique quia, maiores tenetur modi nobis expedita
-    </span>
-   </li>
+            <li class="md-one-line avatar">
+                <img alt="Ángel Martín Santiago Segura"
+                    src="img/angel.png">
+                <span class="headline">
+                    Ángel Martín Santiago Segura
+                </span>
+            </li>
 
-   <li>
-    <a class="md-one-line image" target="_blank" rel="noopener noreferrer"
-     href="https://culturacolectiva.com/historia/ciudad-neza-su-historia-en-fotografias/">
-     <img alt="Coyote de Neza" src="img/Escultura_de_coyote.jpeg">
-     <span class="headline">
-      Neza Link
-     </span>
-    </a>
-   </li>
+            <li class="md-one-line image">
+                <img alt="Ángel Martín Santiago Segura"
+                    src="img/angel.png">
+                <span class="headline">
+                    Especialista en interfaces web y experiencia de usuario.
+                </span>
+            </li>
 
-  </ul>
+            <!-- DANIEL -->
 
-  <footer>
-   <ul>
-    <li>
-     <p>
-      <small>
-       <a target="_blank" rel="noopener noreferrer"
-        href="https://www.pexels.com/es-es/foto/nina-mono-cara-sonriente-10961948/">
-        La foto de la niña es de Moises Patrício, publicada en el sitio Pexels.
-        Haz clic en este hipervínculo para más información.
-       </a>
-      </small>
-     </p>
-    </li>
-    <li>
-     <p>
-      <small>
-       <a target="_blank" rel="noopener noreferrer"
-        href="https://www.pinterest.com.mx/ludresi/">
-        La foto del Coyote de Neza es de Ludres Isan, publicada en el sitio
-        Pinterest. Haz clic en este hipervínculo para más información.
-       </a>
-      </small>
-     </p>
-    </li>
-    <li>
-     <p>
-      <small>
-       <a target="_blank" rel="noopener noreferrer"
-        href="https://www.pexels.com/es-es/foto/puente-golden-gate-san-francisco-california-3701822/">
-        La foto del puente de San Francisco es de Craig Dennis, publicada en el
-        sitio Pexels. Haz clic en este hipervínculo para más información.
-       </a>
-      </small>
-     </p>
-    </li>
-   </ul>
-  </footer>
+            <li class="md-one-line avatar">
+                <img alt="Daniel Hernández Cruz"
+                    src="img/Daniel.jpeg">
+                <span class="headline">
+                    Daniel Hernández Cruz
+                </span>
+            </li>
 
- </section>
+
+            <li class="md-one-line avatar">
+                <img alt="Daniel Hernández Cruz"
+                    src="img/Daniel.jpeg">
+                <span class="headline">
+                    Programador full stack con experiencia en desarrollo de aplicaciones web y bases de datos.
+                </span>
+            </li>
+
+            <!-- CRISTOFER -->
+
+            <li class="md-one-line avatar">
+                <img alt="Millán Pérez Cristofer Antonio"
+                    src="img/Cristofer.jpeg">
+                <span class="headline">
+                    Millán Pérez Cristofer Antonio
+                </span>
+            </li>
+
+            <li class="md-one-line video">
+                <img alt="Cristofer"
+                    src="img/Cristofer.jpeg">
+                <span class="headline">
+                    Responsable de pruebas de calidad y validación de sistemas.
+                </span>
+            </li>
+
+            <!-- PLUMA -->
+
+            <li class="md-one-line avatar">
+                <img alt="Mora Pluma Naydelin Guadalupe"
+                    src="img/Pluma.png">
+                <span class="headline">
+                    Mora Pluma Naydelin Guadalupe
+                </span>
+            </li>
+
+            <li class="md-one-line image">
+                <img alt="Pluma"
+                    src="img/Pluma.png">
+                <span class="headline">
+                    Diseñadora UI/UX enfocada en accesibilidad y diseño visual.
+                </span>
+            </li>
+
+            <!-- NUCI -->
+
+            <li class="md-one-line avatar">
+                <img alt="Nuci Vázquez Andrea"
+                    src="img/nuci.png">
+                <span class="headline">
+                    Nuci Vázquez Andrea
+                </span>
+            </li>
+
+            <li class="md-one-line icon">
+                <span class="material-symbols-outlined">
+                    assignment
+                </span>
+                <span class="headline">
+                    Analista de requerimientos y documentación de proyectos.
+                </span>
+            </li>
+
+            <!-- LOGROS -->
+
+            <li class="md-one-line icon">
+                <span class="material-symbols-outlined">
+                    emoji_events
+                </span>
+                <span class="headline">
+                    Participación en proyectos académicos y desarrollo de
+                    soluciones tecnológicas.
+                </span>
+            </li>
+
+            <li class="md-one-line icon">
+                <span class="material-symbols-outlined">
+                    engineering
+                </span>
+                <span class="headline">
+                    Especialistas en desarrollo web, bases de datos y diseño UI.
+                </span>
+            </li>
+
+            <li class="md-one-line icon">
+                <span class="material-symbols-outlined">
+                    rocket_launch
+                </span>
+                <span class="headline">
+                    Comprometidos con la innovación y la mejora continua.
+                </span>
+            </li>
+
+        </ul>
+
+    </section>
 
 </body>
 
