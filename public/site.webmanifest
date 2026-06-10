@@ -13,14 +13,14 @@
  "screenshots": [
   {
    "src": "/img/screenshot_horizontal.png",
-   "sizes": "699x389",
+   "sizes": "1866x1498",
    "type": "image/png",
    "form_factor": "wide",
    "label": "Lista con Material Design 3."
   },
   {
    "src": "/img/screenshot_vertical.png",
-   "sizes": "595x644",
+   "sizes": "1276x1498",
    "type": "image/png",
    "form_factor": "narrow",
    "label": "Lista con Material Design 3. (2)"
